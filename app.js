@@ -21,7 +21,15 @@ app.use(methodOverride("_method"));
 seedDB();
 
 app.get("/", function(req,res){
-    res.render("searchpage");
+    res.render("landing");
+    
+})
+
+
+
+
+app.get("/home", function(req,res){
+    res.render("home");
     
 })
 
