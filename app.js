@@ -10,7 +10,7 @@ var User = require ("./models/user")
 var seedDB = require ("./seeds")
 
 //app config
-mongoose.connect ("mongodb://localhost/wedding");
+//mongoose.connect ("mongodb://localhost/wedding");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs")
 app.use(express.static(__dirname + "/public")); 
